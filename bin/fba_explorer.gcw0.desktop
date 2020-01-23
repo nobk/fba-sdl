@@ -8,3 +8,4 @@ StartupNotify=true
 Icon=fba_icon
 Categories=emulators;
 X-OD-NeedsDownscaling=true
+X-OD-Alias=aliases.txt
