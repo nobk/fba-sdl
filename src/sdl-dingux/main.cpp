@@ -278,10 +278,12 @@ int main(int argc, char **argv )
 		GuiRun();
 	else {
 		int drv;
-
-		if((drv = FindDrvByFileName(path)) >= 0)
+		if((drv = FindDrvByFileName(path)) >= 0) {
+            // Reloads game defaults once game selected using command line
+			ConfigGameDefault();
 			RunEmulator(drv);
-	}
+        }
+    }
 
 	BurnLibExit();
 
