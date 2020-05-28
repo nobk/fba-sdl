@@ -279,8 +279,8 @@ int main(int argc, char **argv )
 	else {
 		int drv;
 		if((drv = FindDrvByFileName(path)) >= 0) {
-            // Reloads game defaults once game selected using command line
-			ConfigGameDefault();
+            // Loads game config once game selected using command line
+			ConfigGameLoad();
 			RunEmulator(drv);
         }
     }
